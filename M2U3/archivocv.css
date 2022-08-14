@@ -16,6 +16,12 @@ h1 {
 
 }
 
+.fija {
+    position: sticky;
+    top: 0;
+
+}
+
 
 .sobremi {
     text-decoration: underline;
@@ -89,6 +95,11 @@ li {
 
 .padre img {
     border-radius: 161px 161px 161px 161px;
+
+}
+
+.padre img:hover{
+    border-radius: 50%;
 }
 
 .info {
@@ -167,3 +178,59 @@ li {
     align-content: center;
     box-shadow: 14px 19px 46px 8px rgba(0, 0, 0, 0.75);
 }
+
+.caja3:hover{
+    transform: scale(1.1);
+    background-color: aquamarine;
+    transition: all 0.8s;
+}
+
+
+.parrafo:hover{
+    transform: scale(1);
+    background-color: rgb(184, 77, 77);
+    transition: all 0.8s;
+
+}
+
+@media (max-width:650px){
+    .contacto {
+        align-items: center;
+        display: flex;
+        /* justify-content: space-around; */
+        flex-direction: column;
+    
+    }
+    .padre {
+        align-items: center;
+        display: flex;
+        /* justify-content: space-around; */
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .caja {
+        column-count: 1;
+        height: fit-content;
+        width: fit-content;
+        word-break: break-all;
+        word-wrap: break-word;
+        background: #393939;
+        background: repeating-linear-gradient(134deg, #393939 0%, #929292 63%);
+        background: -webkit-repeating-linear-gradient(134deg, #393939 0%, #929292 63%);
+        background: -moz-repeating-linear-gradient(134deg, #393939 0%, #929292 63%);
+        font-weight: bold;
+        box-shadow: -4px -3px 80px 22px rgba(0, 0, 0, 0.75);
+        padding: 20px;
+        font-size: 18px;
+        align-content: center
+
+
+    
+
+    }
+
+}
+
